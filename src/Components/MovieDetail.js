@@ -49,7 +49,7 @@ export default function MovieDetail({ selectId, onCloseMovie, onAddWatched, watc
             async function getMovieDetails() {
                 setIsLoading(true);
                 const rest = await fetch(
-                    `http://www.omdbapi.com/?apikey=${KEY}&i=${selectId}`
+                    `https://www.omdbapi.com/?apikey=${KEY}&i=${selectId}`
                 );
                 const data = await rest.json();
 
